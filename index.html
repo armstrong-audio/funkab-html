@@ -329,10 +329,10 @@
               <div class="row">
                 <div class="col-xl-7 col-lg-9">
                   <div class="main-slider__content">
-                    <p class="main-slider__sub-title"></p>
-                    <h2 class="main-slider__title"></h2>
-                    <h4 class="main-slider__text"></h4>
-                    <p class="main-slider__text-two"></p>
+                    <p class="main-slider__sub-title" id="sub-title-1"></p>
+                    <h2 class="main-slider__title" id="title-1"></h2>
+                    <h4 class="main-slider__text" id="text-1"></h4>
+                    <p class="main-slider__text-two" id="text-two-1"></p>
                     <div class="main-slider__btn-box">
                       <a
                         href="https://broneeri.funkab.ee"
@@ -355,10 +355,10 @@
               <div class="row">
                 <div class="col-xl-7 col-lg-9">
                   <div class="main-slider__content">
-                    <p class="main-slider__sub-title"></p>
-                    <h2 class="main-slider__title"></h2>
-                    <h4 class="main-slider__text"></h4>
-                    <p class="main-slider__text-two"></p>
+                    <p class="main-slider__sub-title" id="sub-title-2"></p>
+                    <h2 class="main-slider__title" id="title-2"></h2>
+                    <h4 class="main-slider__text" id="text-2"></h4>
+                    <p class="main-slider__text-two" id="text-two-2"></p>
                     <div class="main-slider__btn-box">
                       <a
                         href="https://broneeri.funkab.ee"
@@ -381,10 +381,10 @@
               <div class="row">
                 <div class="col-xl-7 col-lg-9">
                   <div class="main-slider__content">
-                    <p class="main-slider__sub-title"></p>
-                    <h2 class="main-slider__title"></h2>
-                    <h4 class="main-slider__text"></h4>
-                    <p class="main-slider__text-two"></p>
+                    <p class="main-slider__sub-title" id="sub-title-3"></p>
+                    <h2 class="main-slider__title" id="title-3"></h2>
+                    <h4 class="main-slider__text" id="text-3"></h4>
+                    <p class="main-slider__text-two" id="text-two-3"></p>
                     <div class="main-slider__btn-box">
                       <a
                         href="https://broneeri.funkab.ee"
@@ -410,8 +410,7 @@
         </div>
       </div>
     </section>
-
-      <!--Main Slider End-->
+    <!--Main Slider End-->
 
 
 
@@ -1438,7 +1437,7 @@
     <script src="assets/js/assimox.js"></script>
 
     <!-- get content from API -->
-      <script>
+     <script>
       document.addEventListener("DOMContentLoaded", function() {
         // Fetch content from the API
         fetch('https://api.admin.servicehost.io/api/rest/getfunkabhome')
@@ -1447,21 +1446,24 @@
             const slidesData = data.funkab_pages;
 
             // Check if data exists
-            if (slidesData && slidesData.length > 0) {
-              // Populate the slider with content from API
-              slidesData.forEach((slide, index) => {
-                // Slide 1, Slide 2, etc.
-                const sliderTitle = document.querySelectorAll('.main-slider__title')[index];
-                const sliderSubtitle = document.querySelectorAll('.main-slider__sub-title')[index];
-                const sliderText = document.querySelectorAll('.main-slider__text')[index];
-                const sliderTextTwo = document.querySelectorAll('.main-slider__text-two')[index];
+            if (slidesData && slidesData.length >= 3) {
+              // Slide 1
+              document.getElementById('title-1').innerHTML = slidesData[0].title;
+              document.getElementById('sub-title-1').innerHTML = slidesData[0].title2;
+              document.getElementById('text-1').innerHTML = slidesData[0].title3;
+              document.getElementById('text-two-1').innerHTML = slidesData[0].title4 + "<br>" + slidesData[0].content;
 
-                // Update slide content
-                if (sliderTitle) sliderTitle.innerHTML = slide.title;
-                if (sliderSubtitle) sliderSubtitle.innerHTML = slide.title2;
-                if (sliderText) sliderText.innerHTML = slide.title3;
-                if (sliderTextTwo) sliderTextTwo.innerHTML = `${slide.title4}<br>${slide.content}`;
-              });
+              // Slide 2
+              document.getElementById('title-2').innerHTML = slidesData[1].title;
+              document.getElementById('sub-title-2').innerHTML = slidesData[1].title2;
+              document.getElementById('text-2').innerHTML = slidesData[1].title3;
+              document.getElementById('text-two-2').innerHTML = slidesData[1].title4 + "<br>" + slidesData[1].content;
+
+              // Slide 3
+              document.getElementById('title-3').innerHTML = slidesData[2].title;
+              document.getElementById('sub-title-3').innerHTML = slidesData[2].title2;
+              document.getElementById('text-3').innerHTML = slidesData[2].title3;
+              document.getElementById('text-two-3').innerHTML = slidesData[2].title4 + "<br>" + slidesData[2].content;
             }
           })
           .catch(error => console.error('Error fetching data:', error));
