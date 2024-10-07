@@ -4,13 +4,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kodumasinateremont - Kodumasinateremont, Pesumasinateremont</title>
+  <title id="dynamic-title">Laen...</title>
+  <meta id="meta-description" name="description" content="Laen...">
+  <meta id="meta-keywords" name="keywords" content="">
+  <link rel="canonical" href="https://funkab.ee" />
+  
+  <meta id="og-title" property="og:title" content="">
+  <meta id="og-description" property="og:description" content="">
+  <meta property="og:url" content="https://funkab.ee">
+  <meta property="og:image" content="https://funkab.ee/assets/kodumasinate-remont-pilt.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tallinna kodumasinate remont">
+  <meta name="twitter:description"
+    content="Kodumasinate ja pesumasinate remont Eestis. Pakume professionaalset ja kiiret teenust pesumasinate, nõudepesumasinate, ja teiste kodumasinate remondis. Võta meiega ühendust!">
+  <meta name="twitter:image" content="https://funkab.ee/assets/kodumasinate-remont-pilt.png">
+
+  <!-- Schema Markup for Rich Snippets -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Kodumasinate remont",
+      "description": "Professionaalne kodumasinate ja pesumasinate remont Tallinnas.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Eesti"
+      },
+      "serviceType": "Kodumasinate remont",
+      "provider": {
+        "@type": "Organization",
+        "name": "Funkab OÜ",
+        "url": "https://funkab.ee"
+      }
+    }
+    </script>
   <!-- favicons Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
   <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-  <meta name="description" content="Funkab HTML 5 Template " />
+  <meta name="description" content="Funkab" />
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1240,6 +1274,18 @@
 
           // Check if data exists
           if (pagesData && pagesData.length >= 3) {
+            // SEO data
+            const seoData = pagesData[0];
+
+            document.title = seoData.title;
+            document.getElementById('meta-description').setAttribute("content", seoData.title2);
+            document.getElementById('meta-keywords').setAttribute("content", seoData.strings_array.join(', '));
+            document.getElementById('canonical-link').setAttribute("href", "https://funkab.ee");
+            document.getElementById('og-title').setAttribute("content", seoData.title3);
+            document.getElementById('og-description').setAttribute("content", seoData.title4);
+            document.getElementById('og-url').setAttribute("content", "https://funkab.ee");
+            document.getElementById('og-image').setAttribute("content", "https://funkab.ee/assets/kodumasinate-remont-pilt.png");
+
             // Slide 1
             document.getElementById('title-1').innerHTML = pagesData[0].title;
             document.getElementById('sub-title-1').innerHTML = pagesData[0].title2;
@@ -1297,6 +1343,15 @@
             document.getElementById('about-title2').innerHTML = pagesData[11].title2 || '';
             document.getElementById('about-title3').innerHTML = pagesData[11].title3 || '';
             document.getElementById('about-content').innerHTML = pagesData[11].content || '';
+            const points = pagesData[11].strings_array || [];
+            if (points.length >= 6) {
+              document.getElementById('about-point-1').innerHTML = points[0] || '';
+              document.getElementById('about-point-2').innerHTML = points[1] || '';
+              document.getElementById('about-point-3').innerHTML = points[2] || '';
+              document.getElementById('about-point-4').innerHTML = points[3] || '';
+              document.getElementById('about-point-5').innerHTML = points[4] || '';
+              document.getElementById('about-point-6').innerHTML = points[5] || '';
+            }
           }
         })
         .catch(error => console.error('Error fetching data:', error));
