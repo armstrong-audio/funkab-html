@@ -8,7 +8,7 @@
   <meta id="meta-description" name="description" content="Laen...">
   <meta id="meta-keywords" name="keywords" content="">
   <link rel="canonical" href="https://funkab.ee" />
-  
+
   <meta id="og-title" property="og:title" content="">
   <meta id="og-description" property="og:description" content="">
   <meta property="og:url" content="https://funkab.ee">
@@ -1287,63 +1287,63 @@
             document.getElementById('og-image').setAttribute("content", "https://funkab.ee/assets/kodumasinate-remont-pilt.png");
 
             // Slide 1
-            document.getElementById('title-1').innerHTML = pagesData[0].title;
-            document.getElementById('sub-title-1').innerHTML = pagesData[0].title2;
-            document.getElementById('text-1').innerHTML = pagesData[0].title3;
-            document.getElementById('text-two-1').innerHTML = pagesData[0].title4 + "<br>" + pagesData[0].content;
+            document.getElementById('title-1').innerHTML = pagesData[1].title;
+            document.getElementById('sub-title-1').innerHTML = pagesData[1].title2;
+            document.getElementById('text-1').innerHTML = pagesData[1].title3;
+            document.getElementById('text-two-1').innerHTML = pagesData[1].title4 + "<br>" + (pagesData[1].content || '');
 
             // Slide 2
-            document.getElementById('title-2').innerHTML = pagesData[1].title;
-            document.getElementById('sub-title-2').innerHTML = pagesData[1].title2;
-            document.getElementById('text-2').innerHTML = pagesData[1].title3;
-            document.getElementById('text-two-2').innerHTML = pagesData[1].title4 + "<br>" + pagesData[1].content;
+            document.getElementById('title-2').innerHTML = pagesData[2].title;
+            document.getElementById('sub-title-2').innerHTML = pagesData[2].title2;
+            document.getElementById('text-2').innerHTML = pagesData[2].title3;
+            document.getElementById('text-two-2').innerHTML = pagesData[2].title4 + "<br>" + (pagesData[2].content || '');
 
             // Slide 3
-            document.getElementById('title-3').innerHTML = pagesData[2].title;
-            document.getElementById('sub-title-3').innerHTML = pagesData[2].title2;
-            document.getElementById('text-3').innerHTML = pagesData[2].title3;
-            document.getElementById('text-two-3').innerHTML = pagesData[2].title4 + "<br>" + pagesData[2].content;
+            document.getElementById('title-3').innerHTML = pagesData[3].title;
+            document.getElementById('sub-title-3').innerHTML = pagesData[3].title2;
+            document.getElementById('text-3').innerHTML = pagesData[3].title3;
+            document.getElementById('text-two-3').innerHTML = pagesData[3].title4 + "<br>" + (pagesData[3].content || '');
 
             // Services
-            document.getElementById('services-title').innerHTML = pagesData[3].title;
-            document.getElementById('services-title-2').innerHTML = pagesData[3].title2;
-            document.getElementById('services-text').innerHTML = pagesData[3].title3;
-            document.getElementById('services-footer').innerHTML = pagesData[3].title4;
+            document.getElementById('services-title').innerHTML = pagesData[4].title;
+            document.getElementById('services-title-2').innerHTML = pagesData[4].title2;
+            document.getElementById('services-text').innerHTML = pagesData[4].title3;
+            document.getElementById('services-footer').innerHTML = pagesData[4].title4;
 
             // Service 1
-            document.getElementById('service-1-title').innerHTML = pagesData[4].title || '';
-            document.getElementById('service-1-title2').innerHTML = pagesData[4].title2 || '';
+            document.getElementById('service-1-title').innerHTML = pagesData[5].title || '';
+            document.getElementById('service-1-title2').innerHTML = pagesData[5].title2 || '';
 
             // Service 2
-            document.getElementById('service-2-title').innerHTML = pagesData[5].title || '';
-            document.getElementById('service-2-title2').innerHTML = pagesData[5].title2 || '';
+            document.getElementById('service-2-title').innerHTML = pagesData[6].title || '';
+            document.getElementById('service-2-title2').innerHTML = pagesData[6].title2 || '';
 
             // Service 3
-            document.getElementById('service-3-title').innerHTML = pagesData[6].title || '';
-            document.getElementById('service-3-title2').innerHTML = pagesData[6].title2 || '';
+            document.getElementById('service-3-title').innerHTML = pagesData[7].title || '';
+            document.getElementById('service-3-title2').innerHTML = pagesData[7].title2 || '';
 
             // Service 4
-            document.getElementById('service-4-title').innerHTML = pagesData[7].title || '';
-            document.getElementById('service-4-title2').innerHTML = pagesData[7].title2 || '';
+            document.getElementById('service-4-title').innerHTML = pagesData[8].title || '';
+            document.getElementById('service-4-title2').innerHTML = pagesData[8].title2 || '';
 
             // Service 5
-            document.getElementById('service-5-title').innerHTML = pagesData[8].title || '';
-            document.getElementById('service-5-title2').innerHTML = pagesData[8].title2 || '';
+            document.getElementById('service-5-title').innerHTML = pagesData[9].title || '';
+            document.getElementById('service-5-title2').innerHTML = pagesData[9].title2 || '';
 
             // Service 6
-            document.getElementById('service-6-title').innerHTML = pagesData[9].title || '';
-            document.getElementById('service-6-title2').innerHTML = pagesData[9].title2 || '';
+            document.getElementById('service-6-title').innerHTML = pagesData[10].title || '';
+            document.getElementById('service-6-title2').innerHTML = pagesData[10].title2 || '';
 
             // Service 7
-            document.getElementById('service-7-title').innerHTML = pagesData[10].title || '';
-            document.getElementById('service-7-title2').innerHTML = pagesData[10].title2 || '';
+            document.getElementById('service-7-title').innerHTML = pagesData[11].title || '';
+            document.getElementById('service-7-title2').innerHTML = pagesData[11].title2 || '';
 
             // About Section (FIRMAST)
-            document.getElementById('about-title').innerHTML = pagesData[11].title || '';
-            document.getElementById('about-title2').innerHTML = pagesData[11].title2 || '';
-            document.getElementById('about-title3').innerHTML = pagesData[11].title3 || '';
-            document.getElementById('about-content').innerHTML = pagesData[11].content || '';
-            const points = pagesData[11].strings_array || [];
+            document.getElementById('about-title').innerHTML = pagesData[12].title || '';
+            document.getElementById('about-title2').innerHTML = pagesData[12].title2 || '';
+            document.getElementById('about-title3').innerHTML = pagesData[12].title3 || '';
+            document.getElementById('about-content').innerHTML = pagesData[12].content || '';
+            const points = pagesData[12].strings_array || [];
             if (points.length >= 6) {
               document.getElementById('about-point-1').innerHTML = points[0] || '';
               document.getElementById('about-point-2').innerHTML = points[1] || '';
