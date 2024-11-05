@@ -166,7 +166,53 @@
   <!-- End sidebar widget content -->
 
   <div class="page-wrapper">
-    <div id="header-container"></div>
+    <header class="main-header main-header--dark">
+      <nav class="main-menu">
+        <div class="main-menu__wrapper">
+          <div class="main-menu__wrapper-inner">
+            <div class="main-menu__left">
+              <div class="main-menu__logo">
+                <a href="/"><img src="assets/images/logo.png" alt="" /></a>
+              </div>
+              <div class="main-menu__main-menu-box">
+                <div class="main-menu__main-menu-box-inner">
+                  <a href="/" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                  <ul class="main-menu__list">
+                    <li>
+                      <a href="/">Avaleht </a>
+                    </li>
+                    <li>
+                      <a href="/hinnakiri">Hinnakiri</a>
+                    </li>
+                    <li>
+                      <a href="/kodumasinate-remont">Kodumasinate remont</a>
+                    </li>
+                    <li>
+                      <a href="/kontakt">Kontakt</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-menu__right">
+              <div class="main-menu__call">
+                <div class="main-menu__call-icon">
+                  <span class="icon-telephone"></span>
+                </div>
+                <div class="main-menu__call-content">
+                  <p class="main-menu__call-sub-title">
+                    Helista kodumasinate eksperdile
+                  </p>
+                  <h4 class="main-menu__call-number">
+                    <a href="tel:0037253096510"> +372 530 96 510</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <div class="stricky-header stricked-menu main-menu main-header--dark">
       <div class="sticky-header__content"></div>
@@ -263,45 +309,7 @@
     </section>
     <!--Process End-->
 
-    <!--Contact Bar Start-->
-    <section class="contact-bar">
-      <div class="container">
-        <div class="contact-bar__inne">
-          <div class="contact-bar__bg" style="
-                background-image: url(assets/images/backgrounds/kontakteeru-remondiga.png);
-              "></div>
-          <div class="contact-bar__left">
-            <div class="contact-bar__left-icon">
-              <span class="icon-diagnostic"></span>
-            </div>
-            <div class="contact-bar__left-content">
-              <h3 class="contact-bar__title">
-                Soovid tasuta konsultatsiooni?
-              </h3>
-              <p class="contact-bar__text">
-                Kui tundub, et on soov abi saada telefoni teel...
-              </p>
-            </div>
-          </div>
-          <div class="contact-bar__right">
-            <div class="contact-bar__call">
-              <div class="contact-bar__call-icon">
-                <img src="assets/images/icon/contact-bar-call-icon.png" alt="" />
-              </div>
-              <div class="contact-bar__call-content">
-                <h4 class="contact-bar__call-number">
-                  <a href="tel:0037253096510">+372 530 96 510</a>
-                </h4>
-                <p class="contact-bar__call-time">
-                  Esmasp. - reede: 9:30 - 18:00
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Contact Bar End-->
+    <div id="contactbar-container"></div>
 
     <!--Team One Start-->
     <section class="team-one">
@@ -797,8 +805,8 @@
   <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
-  <script src="script.js"></script> <!-- handlebar fetch API -->
-  <script src="components.js"></script> <!-- import static components -->
+  <script src="script.js"></script>
+  <script src="components.js"></script>
 
   <script id="slider-template" type="text/x-handlebars-template">
     <section class="main-slider">
