@@ -1,0 +1,135 @@
+{
+    "funkab_pages": [
+        {
+            "id": 13,
+            "title": "Kodumasinate remont | Pesumasinate remont | Parim teenus Eestis",
+            "title2": "Kodumasinate ja pesumasinate remont Eestis. Pakume professionaalset ja kiiret teenust pesumasinate, nõudepesumasinate, ja teiste kodumasinate remondis. Võta meiega ühendust!",
+            "title3": "Kodumasinate ja pesumasinate remont Tallinnas ja Harjumaal",
+            "title4": "Otsid kiiret ja usaldusväärset kodumasinate remontijat? Funkab tuleb ja remondib sinu pesumasina, pesukuivati või mõne muu kodumasina otse sinu kodus.",
+            "content": null,
+            "strings_array": [
+                "kodumasinate remont",
+                "pesumasinate remont",
+                "nõudepesumasinate remont",
+                "kodumasinate parandus",
+                "kodumasinate remont tallinnas",
+                "pesumasin ei tööta"
+            ]
+        },
+        {
+            "id": 1,
+            "title": "Pesumasinate & pesukuivatite remont ja diagnostika",
+            "title2": "Tallinnas ...",
+            "title3": "Teostan tööd kohapeal ja kiiresti!",
+            "title4": "* Klikka \"Broneeri väljakutse\" ja vali",
+            "content": "<p>alates <strong>HOMSEST</strong> endale sobiv vaba aeg!</p>",
+            "strings_array": null
+        },
+        {
+            "id": 2,
+            "title": "Kodumasinate hooldus, remont ja diagnostika",
+            "title2": "Tallinnas ...",
+            "title3": "Pikaajaline kogemus tagab kvaliteedi!",
+            "title4": "* Klikka \"Broneeri väljakutse\" ja vali",
+            "content": "<p>alates <strong>HOMSEST</strong> endale sobiv vaba aeg!</p>",
+            "strings_array": null
+        },
+        {
+            "id": 3,
+            "title": "Kodutehnika paigaldus, nõustamine ja remont",
+            "title2": "Tallinnas ...",
+            "title3": "Koduvisiidid Tallinnas ja Harjumaal",
+            "title4": "* Klikka \"Broneeri väljakutse\" ja vali",
+            "content": "<p>alates <strong>HOMSEST</strong> endale sobiv vaba aeg!</p>",
+            "strings_array": null
+        },
+        {
+            "id": 4,
+            "title": "TEENUSED",
+            "title2": "Kodumasinate remont jpm.",
+            "title3": "Pakun personaalset ning sõbralikku teenust. Rahulolev klient on minu suurim eesmärk.",
+            "title4": "Kõikvõimaliku (kodu)elektroonika remont ....",
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 5,
+            "title": "Külmikute remont",
+            "title2": "Remont ja gaasilekke tuvastamine",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 6,
+            "title": "Pesumasinad/kuivatid",
+            "title2": "Remont ja veepumba vahetus",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 7,
+            "title": "Praeahjude remont",
+            "title2": "Remont ja termostaadi vahetus",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 8,
+            "title": "Boilerid",
+            "title2": "Remont, katlakivi eemaldus jpm.",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 9,
+            "title": "Pliitide remont",
+            "title2": "Remont ja gaasipõleti vahetus",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 10,
+            "title": "Kodumasinad",
+            "title2": "Remondin igasuguseid kodumasinaid",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 11,
+            "title": "Konditsoneerid ja kütteallikad",
+            "title2": "Remont ja hooldus",
+            "title3": null,
+            "title4": null,
+            "content": null,
+            "strings_array": null
+        },
+        {
+            "id": 12,
+            "title": "FIRMAST",
+            "title2": "Funkab OÜ peamiseks tegevusalaks on suurte kodumasinate remont ja hooldus.",
+            "title3": "Pesumasinad, nõudepesumasinad, pesukuivatid, ahjud, misiganes koduelektroonika. Remondime kõike ja kohapeal.",
+            "title4": null,
+            "content": "<p>Meie pikajalised kogemused aastast 1997 kodutehnika remondi alal tulevad igati kasuks seadmete parandamisel v&otilde;i hooldamisel. M&otilde;istame teha nii elektroonilisi kui mehaanilisi t&ouml;id ehk siis k&otilde;ike mis aitaks kodumasina uuesti korda saada. Et saavutada parim soovitud tulemus kasutame alati v&otilde;imalusel asendamiseks originaalvaruosi ja tarvikuid, nii saab kindel olla t&ouml;&ouml; heas kvaliteedis. Meile tuntud kaubam&auml;rgid on: Electrolux, Aeg, Zanussi, Rosenlew, ElektroHelios, Candy, Hoover, Upo, Cylinda, Eurotech, Whirlpool, Ignis, Bosch, Siemens, Brandt, Gorenje, Beko, Blomberg, Samsung, LG.</p>",
+            "strings_array": [
+                "Mahhaanika ja elektroonika",
+                "100% rahulolu garaneeritud",
+                "Kõrge kvaliteet on #1",
+                "Testime tehtud töid põhjalikult",
+                "Töö kiire ja kohapeal",
+                "Mugav broneerimissüsteem"
+            ]
+        }
+    ]
+}
