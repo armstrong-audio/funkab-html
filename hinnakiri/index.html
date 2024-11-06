@@ -84,8 +84,8 @@
 
 
     <div class="page-wrapper">
-        <header class="main-header main-header--dark">
-            <nav class="main-menu">
+        <header class="main-header">
+            <nav class="main-menu main-menu-four">
                 <div class="main-menu__wrapper">
                     <div class="main-menu__wrapper-inner">
                         <div class="main-menu__left">
@@ -94,12 +94,12 @@
                             </div>
                             <div class="main-menu__main-menu-box">
                                 <div class="main-menu__main-menu-box-inner">
-                                    <a href="/" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                     <ul class="main-menu__list">
                                         <li>
-                                            <a href="/">Avaleht </a>
+                                            <a href="/">Avaleht</a>
                                         </li>
-                                        <li>
+                                        <li class="current">
                                             <a href="/hinnakiri">Hinnakiri</a>
                                         </li>
                                         <li>
@@ -110,6 +110,8 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <!-- (Optional: Include search and sidebar icons if needed) -->
+                                <!-- ... -->
                             </div>
                         </div>
                         <div class="main-menu__right">
@@ -122,7 +124,7 @@
                                         Helista kodumasinate eksperdile
                                     </p>
                                     <h4 class="main-menu__call-number">
-                                        <a href="tel:0037253096510"> +372 530 96 510</a>
+                                        <a href="tel:0037253096510">+372 530 96 510</a>
                                     </h4>
                                 </div>
                             </div>
@@ -136,11 +138,10 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
 
-
-        <!--Page Header Start-->
         <section class="page-header">
             <div class="page-header__bg"
-                style="background-image: url(../assets/images/backgrounds/page-header-bg-img.jpg);"></div>
+                style="background-image: url(../assets/images/backgrounds/page-header-bg-img.jpg);">
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -148,17 +149,14 @@
                             <h2 class="page-header__title">Hinnakiri</h2>
                             <ul class="thm-breadcrumb list-unstyled">
                                 <li><a href="/">Avaleht</a></li>
-                                <li><a href="projects.html">Koduvisiitide ja remondi hinnad</a></li>
+                                <li><span>Koduvisiitide ja remondi hinnad</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Page Header End-->
 
-
-        <!--Project Details Start-->
         <section class="project-details">
             <div class="container">
                 <div class="row">
@@ -190,27 +188,25 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="project-details__right">
-                            <div class="project-details__img-1">
-                                <img src="../assets/images/project/project-details-img-1.jpg" alt="">
-                            </div>
-                            <div class="project-details__img-box">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="project-details__img-2">
-                                            <img src="../assets/images/project/project-details-img-2.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6">
-                                        <div class="project-details__img-3">
-                                            <img src="../assets/images/project/project-details-img-3.jpg" alt="">
-                                        </div>
+                    <div class="project-details__right">
+                        <div class="project-details__img-1">
+                            <img src="https://bracketweb.com/assimox-html/assets/images/project/project-details-img-1.jpg"
+                                alt="">
+                        </div>
+                        <div class="project-details__img-box">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="project-details__img-2">
+                                        <img src="https://bracketweb.com/assimox-html/assets/images/project/project-details-img-2.jpg"
+                                            alt="">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="project-details__img-4">
-                                <img src="../assets/images/project/project-details-img-4.jpg" alt="">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="project-details__img-3">
+                                        <img src="https://bracketweb.com/assimox-html/assets/images/project/project-details-img-3.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -248,21 +244,21 @@
     <!-- Page components -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('components/home/contactbar.html')
+            fetch('../components/home/contactbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('contactbar-container').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading contact bar:', error));
 
-            fetch('components/home/footer.html')
+            fetch('../components/home/footer.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('footer-container').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading footer:', error));
 
-            fetch('components/home/sidebar-textwidget.html')
+            fetch('../components/home/sidebar-textwidget.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('sidebar-textwidget').innerHTML = data;
