@@ -1,7 +1,8 @@
 # funkab-html
 
 * https://uus.funkab.ee
-* Booking: 
+* https://bracketweb.com/assimox-html/index.html
+* Booking: https://github.com/armstrong-audio/funkab-ee
 * [Documentation and estimations](https://drive.google.com/drive/u/0/folders/1mXC37oJUwr8bwkOJixlGy_T9FHnJrRaS)
 * Template engine Handlebars
 
