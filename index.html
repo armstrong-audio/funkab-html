@@ -565,7 +565,11 @@
             <li class="services-one__list">
               <div class="services-one__single">
                 <div class="services-one__icon">
-                  <span class="{{icon}}"></span>
+                  {{#if @first}}
+                    <img src="/assets/images/icon-service/kuivatite-remont.png" height="68" alt="Pesukuivatite remont" />
+                  {{else}}
+                    <span class="{{icon}}"></span>
+                  {{/if}}
                 </div>
                 <div class="services-one__title-box">
                   <h4 class="services-one__title">
@@ -577,7 +581,8 @@
                 </div>
                 <div class="services-one__read-more">
                   <a href="https://broneeri.funkab.ee">
-                    broneeri remondi aeg <i class="fa fa-plus"></i></a>
+                    broneeri remondi aeg <i class="fa fa-plus"></i>
+                  </a>
                 </div>
               </div>
             </li>
