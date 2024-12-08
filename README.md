@@ -5,6 +5,7 @@
 * Booking: https://github.com/armstrong-audio/funkab-ee
 * [Documentation and estimations](https://drive.google.com/drive/u/0/folders/1mXC37oJUwr8bwkOJixlGy_T9FHnJrRaS)
 * Template engine Handlebars
+* CMS: https://manager.admin.servicehost.io u: funkab@funkab.ee / p: 8f533c5f5750
 
 ## Creds
 
