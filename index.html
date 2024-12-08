@@ -565,11 +565,19 @@
             <li class="services-one__list">
               <div class="services-one__single">
                 <div class="services-one__icon">
-                  {{#if @first}}
-                    <img src="/assets/images/icon-service/kuivatite-remont.png" height="68" alt="Pesukuivatite remont" />
+                {{#if @first}}
+                  <img src="/assets/images/icon-service/kuivatite-remont.png" height="68" alt="Pesukuivatite remont" />
+                {{else}}
+                  {{#if (eq @index 4)}}
+                    <img src="/assets/images/icon-service/elektri-pliidi.png" height="68" alt="Elektripliidi remont" />
                   {{else}}
-                    <span class="{{icon}}"></span>
+                    {{#if (eq @index 5)}}
+                      <img src="/assets/images/icon-service/pesumasina-remont.png" height="68" alt="Pesumasina remont" />
+                    {{else}}
+                      <span class="{{icon}}"></span>
+                    {{/if}}
                   {{/if}}
+                {{/if}}
                 </div>
                 <div class="services-one__title-box">
                   <h4 class="services-one__title">
