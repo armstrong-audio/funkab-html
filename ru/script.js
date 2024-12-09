@@ -4,14 +4,14 @@ Handlebars.registerHelper('eq', function (a, b) {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch content from the API
-    fetch('https://api.admin.servicehost.io/api/rest/getfunkabhome')
+    fetch('https://api.admin.servicehost.io/api/rest/getfunkabhome-ru')
         .then(response => response.json())
         .then(data => {
             const pagesData = data.funkab_pages;
 
             // Process data for the slider (Slides with IDs 1, 2, 3)
-            const slidesData = pagesData.filter(page => [1, 2, 3].includes(page.id)).map(page => ({
-                backgroundImage: 'assets/images/backgrounds/main-slider-bg.jpg',
+            const slidesData = pagesData.filter(page => [14, 15, 16].includes(page.id)).map(page => ({
+                backgroundImage: '../assets/images/backgrounds/main-slider-bg.jpg',
                 title: page.title,
                 title2: page.title2,
                 title3: page.title3,
@@ -19,19 +19,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 content: page.content
             }));
 
-            // Process data for services (Service items with IDs 5 to 11)
-            const servicesTopData = pagesData.find(page => page.id === 4);
-            const servicesData = pagesData.filter(page => page.id >= 5 && page.id <= 11).map((page, index) => ({
+            // Process data for services (Service items with IDs 18 to 24)
+            const servicesTopData = pagesData.find(page => page.id === 17);
+            const servicesData = pagesData.filter(page => page.id >= 18 && page.id <= 24).map((page, index) => ({
                 icon: getServiceIcon(index),
                 title: page.title,
                 title2: page.title2
             }));
 
-            // Process data for the about section (ID 12)
-            const aboutData = pagesData.find(page => page.id === 12);
+            // Process data for the about section (ID 25)
+            const aboutData = pagesData.find(page => page.id === 25);
             const about = {
-                imageSrc: 'assets/images/resources/tallinn-kodumasinate-remont.webp', // Replace with dynamic URL if needed
-                imageAlt: 'Pesumasinate remont ning külmikute parandus Tallinnas',
+                imageSrc: '../assets/images/resources/tallinn-kodumasinate-remont.webp', // Replace with dynamic URL if needed
+                imageAlt: 'Ремонт стиральных машин и холодильников в Таллине',
                 tagline: 'firmast',
                 title: aboutData.title2,
                 title3: aboutData.title3,
