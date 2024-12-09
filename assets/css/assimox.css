@@ -1363,6 +1363,55 @@ ul {
   border-color: #11aded;
 }
 
+/* START LANGUAGE CHANGES ADDITION */
+/* Desktop Styles */
+.main-menu__list > li.language-links {
+  margin-left: 30px; /* Moves them to the right from the rest */
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap; /* Ensures ET / RU stay on one line */
+}
+
+.main-menu__list > li.language-links a {
+  color: var(--assimox-white);
+  font-size: 19px;
+  margin: 0 5px;
+}
+
+.main-menu__list > li.language-links span {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  /* If each item stacks vertically on mobile, ensure ET / RU remain together */
+  .main-menu__list > li.language-links {
+    display: block;
+    text-align: center;
+    margin-left: 0; /* Remove the left margin so it’s more natural on mobile */
+    margin-top: 40px;
+    white-space: nowrap;
+    border-bottom: none !important;
+  }
+
+  .main-menu__list > li.language-links a,
+  .main-menu__list > li.language-links span {
+    display: inline-block;
+  }
+}
+
+.main-menu__list > li.language-links:hover > a {
+  color: #000000 !important;
+}
+
+.main-menu__list > li.language-links a.lang-link:hover {
+  color: #000000 !important;
+}
+
+/** END OF LANGUAGE LINKS CHANGES **/
+
 .main-header--dark .main-menu__call {
   background-color: var(--assimox-white);
 }

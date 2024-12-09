@@ -14,5 +14,5 @@
 
 ## Run locally
 
-* Install: `npm install -g http-server`
-* Run: `http-server` and open [localhost:8080](http://localhost:8080)
+* Install: `npm install -g live-server`
+* Run: `live-server` and it will open in your browser `http://127.0.0.1:8080/`
