@@ -4,7 +4,7 @@ Handlebars.registerHelper('eq', function (a, b) {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Fetch content from the API
-    fetch('https://api.admin.servicehost.io/api/rest/getfunkabhome-ru')
+    fetch('https://api.admin.servicehost.io/api/rest/getfunkabpages-ru')
         .then(response => response.json())
         .then(data => {
             const pagesData = data.funkab_pages;
@@ -29,15 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Process data for the about section (ID 25)
             const aboutData = pagesData.find(page => page.id === 25);
+            let points = aboutData.strings_array || [];
             const about = {
-                imageSrc: '../assets/images/resources/tallinn-kodumasinate-remont.webp', // Replace with dynamic URL if needed
+                imageSrc: '../assets/images/resources/tallinn-kodumasinate-remont.webp',
                 imageAlt: 'Ремонт стиральных машин и холодильников в Таллине',
                 tagline: 'firmast',
                 title: aboutData.title2,
                 title3: aboutData.title3,
                 content: aboutData.content,
-                pointsLeft: aboutData.strings_array.slice(0, 3),
-                pointsRight: aboutData.strings_array.slice(3)
+                pointsLeft: points.slice(0, 3),
+                pointsRight: points.slice(3)
             };
 
             // Render Slider Template

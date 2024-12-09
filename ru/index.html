@@ -10,7 +10,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png" />
   <link rel="manifest" href="../assets/images/favicons/site.webmanifest" />
-  <meta name="description" content="Ремонт стиральных машин, а также сушильных машин и других электрических бытовых приборов в Таллине и Харьюмаа" />
+  <meta name="description"
+    content="Ремонт стиральных машин, а также сушильных машин и других электрических бытовых приборов в Таллине и Харьюмаа" />
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -98,7 +99,7 @@
                     <li><a href="/ru/preiskupant">Прейскурант</a></li>
                     <li><a href="https://broneeri.funkab.ee?lang=ru">Забронировать вызов</a></li>
                     <li><a href="/kontakt">Контакт</a></li>
-                    <li class="language-links"><a href="/et">ET</a> <span>/</span> <a href="/ru">RU</a></li>
+                    <li class="language-links"><a href="/">ET</a> <span>/</span> <a href="/ru">RU</a></li>
                   </ul>
                 </div>
               </div>
@@ -155,7 +156,8 @@
                 <p class="process__sub-title">Выберите подходящее время</p>
               </div>
               <p class="process__text">
-                <a href="https://broneeri.funkab.ee?lang=ru">Забронируйте визит специалиста по ремонту бытовой техники на удобное для вас время здесь>></a>
+                <a href="https://broneeri.funkab.ee?lang=ru">Забронируйте визит специалиста по ремонту бытовой техники
+                  на удобное для вас время здесь>></a>
               </p>
             </div>
           </div>
@@ -261,7 +263,8 @@
                         <i class="fas fa-quote-left"></i>
                       </div>
                       <p class="testimonial-one__text">
-                        Эрки и его команда уже много лет ремонтируют для нашей компании всевозможные бытовые приборы и устройства. Очень
+                        Эрки и его команда уже много лет ремонтируют для нашей компании всевозможные бытовые приборы и
+                        устройства. Очень
                         довольны.
                       </p>
                     </div>
@@ -292,7 +295,8 @@
                         <i class="fas fa-quote-left"></i>
                       </div>
                       <p class="testimonial-one__text">
-                        Всегда остаюсь доволен услугами Funkab и рекомендую их своим друзьям и знакомым. Бывает, что техника начинает работать
+                        Всегда остаюсь доволен услугами Funkab и рекомендую их своим друзьям и знакомым. Бывает, что
+                        техника начинает работать
                         просто от того, что техник Funkab нажимает на кнопку. Мистика!
                       </p>
                     </div>
@@ -323,7 +327,8 @@
                         <i class="fas fa-quote-left"></i>
                       </div>
                       <p class="testimonial-one__text">
-                        Раньше я обращался в разные компании для ремонта бытовой техники, но до сих пор никто, кроме Funkab OÜ, не смог решить
+                        Раньше я обращался в разные компании для ремонта бытовой техники, но до сих пор никто, кроме
+                        Funkab OÜ, не смог решить
                         все наши проблемы.
                       </p>
                     </div>
@@ -647,10 +652,11 @@
       yearsInMarket -= 1;
     }
 
-    document.getElementById('years-in-market').textContent = yearsInMarket;
+    const yearsElem = document.getElementById('years-in-market');
+    if (yearsElem) yearsElem.textContent = yearsInMarket;
 
-    const currentYear = currentDate.getFullYear();
-    document.getElementById('current-year').textContent = currentYear;
+    const currentYearElem = document.getElementById('current-year');
+    if (currentYearElem) currentYearElem.textContent = currentYear;
   </script>
 </body>
 

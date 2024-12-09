@@ -3,7 +3,6 @@ Handlebars.registerHelper('eq', function (a, b) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Fetch content from the API
     fetch('https://api.admin.servicehost.io/api/rest/getfunkabhome')
         .then(response => response.json())
         .then(data => {
